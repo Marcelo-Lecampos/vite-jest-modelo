@@ -5,38 +5,6 @@
 2️⃣ Adicionar ao package.json:
 
 ```bash
-  "scripts": {
-    "test": "jest"
-  }
-```
-
-3️⃣ Instalar:
-
-a. npm install jest -D
-b. npm install @testing-library/jest-dom @testing-library/react @testinglibrary/user-event -D
-c. npm install @babel/core @babel/preset-env @babel/preset-react babel-jest identity-obj-proxy jest-environment-jsdom -D
-
-
-4️⃣ Criar arquivo na raiz: jest.config.js e colocar o código abaixo:
-
-```bash
-module.exports = {
-  testEnvironment: 'jest-environment-jsdom',
-  setupFilesAfterEnv: ['<rootDir>/.jest/setup-tests.js'],
-  moduleNameMapper: {
-    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/.jest/mocks/fileMock.js',
-    '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
-  },
-}
-```
-
-Passos para rodar Jest no Vite:
-
-1️⃣ Instalar o Jest através do link: https://www.npmjs.com/package/jest
-
-2️⃣ Adicionar ao package.json:
-
-```bash
 
   "scripts": {
     "test": "jest"
